@@ -13,4 +13,14 @@
  */
 class name {
     //put your code here
+    protected $_a='BCD';
+    
+    public function __get($name) {
+        echo $this->_a=$name;
+        
+    }
+    
 }
+$a = new name;
+
+        
